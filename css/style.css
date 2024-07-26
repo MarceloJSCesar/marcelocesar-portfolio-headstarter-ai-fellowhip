@@ -461,6 +461,13 @@ body.section-show .transition-mask:before{
 	font-style:italic;
 }
 
+.front-heading > h4{
+	font-size:16px;
+	letter-spacing:2px;
+	color:#999;
+	font-style:italic;
+}
+
 .front-person-img{
 	width:500px;
 	height:500px;
