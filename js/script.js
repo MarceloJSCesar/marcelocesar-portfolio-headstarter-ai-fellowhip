@@ -98,7 +98,8 @@ $(function(){
 	})();
 	
 	window.onload = function() {
-		document.getElementById('contact-form').addEventListener('submit', function(event) {
+		$('#contact-form').validator().on('submit', function (e) {
+            if (!e.isDefaultPrevented()) {
 			event.preventDefault();
 	
 			// Collect data from the form fields
@@ -140,8 +141,16 @@ $(function(){
 							</div>\
 						</div>";
 				});
-		});
-	};
-	
-	
+		}else{
+			document.getElementById('contact-form-result').innerHTML =
+						"<div class='form-group' >\
+							<div class='alert alert-danger alert-dismissible' role='alert'> \
+								<button type='button' class='close' data-dismiss='alert' aria-label='Close' > \
+									<i class='ion-ios-close-empty' ></i> \
+								</button> \
+								<strong>Error!</strong> Sorry, an error occurred. Try again.\
+							</div>\
+						</div>";
+		}
+	})}
 });
