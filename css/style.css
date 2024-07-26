@@ -481,13 +481,13 @@ body.section-show .transition-mask:before{
 	border-radius:0;
 }
 .front-person-img > img{
-	max-width:100%;
+	max-width:110%;
 	vertical-align:bottom;
 	-webkit-transform:rotate(-45deg) translateY(40px);
 	-moz-transform:rotate(-45deg) translateY(40px);
 	-ms-transform:rotate(-45deg) translateY(40px);
-	-o-transform:rotate(-45deg) translateY(40px);
-	transform:rotate(-45deg) translateY(40px);
+	-o-transform:rotate(-45deg) translateY(0px);
+	transform:rotate(-45deg) translateY(10px);
 }
 
 .front-person-titles{
